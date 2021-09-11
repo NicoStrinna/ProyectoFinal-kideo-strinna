@@ -1,0 +1,46 @@
+@import "estilos/colores";
+@import "estilos/fuentes";
+@import "estilos/padding";
+
+@import "componentes/header";
+@import "componentes/footer";
+@import "componentes/contactos";
+@import "componentes/rehabilitacion";
+@import "componentes/nosotros";
+@import "componentes/tips";
+
+@import "funciones/grid";
+@import "funciones/mediaQ";
+@import "funciones/extends";
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.body{
+    width: 100%;
+    background-color: $background-body;
+}
+
+
+.segundo-nombre{
+    margin: 5px 25px;
+    font-family: $segundo-nombre;
+    color: $segundo-nombre;
+    font-size: nth($font-size, 5 );
+}
+    strong{
+    color:$olivos;
+    }
+
+.main-header{
+    h3{
+    @extend %titulos-secciones;
+    }
+    .parraf-main{
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+    }
+}

@@ -1,0 +1,32 @@
+@import "../estilos/padding";
+@import "../estilos/fuentes";
+@import "../estilos/colores";
+
+
+
+header {
+    position: sticky;
+    top: 0px;
+    background-color: $background;
+    margin-bottom: 10px;
+    padding-bottom: map-get($padding, header-bottom-top);
+    padding-top: map-get($padding, header-bottom-top);
+    z-index: 10;
+        a {
+            font-family: $principal;
+            text-decoration: none;
+        }
+    h1{
+        font-size: nth($font-size, 6 );
+        font-family:$principal;
+        color: $nombre-principal;
+    }
+
+
+    .nav-link {
+    color: $navbar;
+     &:hover {
+        color: $olivos;
+     }
+    }
+}

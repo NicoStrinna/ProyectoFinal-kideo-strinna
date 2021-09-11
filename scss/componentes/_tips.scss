@@ -1,0 +1,12 @@
+.tips{
+    
+    .h3-tips{
+    width: 100%;
+    @extend %titulos-secciones;
+    }
+    .tips-lista{
+        .tips-items{
+            color: $parrafos;
+        }
+    }
+}

@@ -1,0 +1,317 @@
+@charset "UTF-8";
+/*fuente de nombre principal*/
+@import url("https://fonts.googleapis.com/css2?family=Fira+Mono&family=Inconsolata:wght@900&display=swap");
+/* fuente de titulos */
+@import url("https://fonts.googleapis.com/css2?family=Heebo&display=swap");
+/*fuente de parrafos*/
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap");
+/*fuente de nombre principal*/
+@import url("https://fonts.googleapis.com/css2?family=Fira+Mono&family=Inconsolata:wght@900&display=swap");
+/* fuente de titulos */
+@import url("https://fonts.googleapis.com/css2?family=Heebo&display=swap");
+/*fuente de parrafos*/
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Mono&family=Inconsolata:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Heebo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap");
+header {
+  position: sticky;
+  top: 0px;
+  background-color: #3b3a3a;
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  z-index: 10;
+}
+header a {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-decoration: none;
+}
+header h1 {
+  font-size: 60px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: yellowgreen;
+}
+header .nav-link {
+  color: #f0e0e0;
+}
+header .nav-link:hover {
+  color: yellowgreen;
+}
+
+/*fuente de nombre principal*/
+/* fuente de titulos */
+/*fuente de parrafos*/
+footer {
+  background-color: #3b3a3a;
+  color: yellowgreen;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin-top: 30px;
+  padding-bottom: 30px;
+}
+footer .footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+footer .footer .redes-sociales {
+  margin: 20px;
+  width: 35px;
+  height: 35px;
+}
+footer .footer .ws-logo {
+  margin: 20px;
+  width: 45px;
+  height: 35px;
+}
+
+/*inicio contactos*/
+.container-contacto {
+  background: #3b3a3a;
+  /*colores*/
+  /*extend*/
+  flex-direction: column;
+  font-family: monospace;
+}
+
+.form-contenedor {
+  background-image: url(../imagenes/deportista-6.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  margin-bottom: 5px;
+}
+.form-contenedor .form {
+  max-width: 450px;
+  margin: auto;
+  background: rgba 0, 0, 0, 0.7;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  margin-top: 20px;
+  border-radius: 7px;
+}
+.form-contenedor .form .h2-contacto {
+  color: #1e222c;
+  /*colores*/
+  text-align: center;
+  margin: 0;
+  font-size: 30px;
+  /*listas-$font-size*/
+  margin-bottom: 10px;
+  display: flex;
+  /*flexbox*/
+}
+.form-contenedor .form input, .form-contenedor .form textarea {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 7px;
+  box-sizing: border-box;
+  font-size: 17px;
+  /*listas-$font-size*/
+  border: solid white;
+  border-radius: 7px;
+}
+.form-contenedor .form input:hover, .form-contenedor .form textarea:hover {
+  cursor: pointer;
+  border: solid red;
+  transition: all 0.3s;
+}
+.form-contenedor .form textarea {
+  min-height: 100px;
+  max-height: 200px;
+  max-width: 100%;
+  border-radius: 7px;
+}
+.form-contenedor .form textarea:hover {
+  cursor: pointer;
+  border: solid red;
+  transition: all 0.3s;
+}
+.form-contenedor .form .boton {
+  border-radius: 7px;
+}
+.form-contenedor .form .boton:hover {
+  cursor: pointer;
+  color: red;
+  transition: all 0.3s;
+}
+.form-contenedor .form .boton:active {
+  cursor: pointer;
+  color: white;
+  background-color: yellowgreen;
+}
+
+.display-1 .como-LL {
+  align-items: center;
+  color: black;
+  font-size: 40px;
+}
+.display-1 .Atendemos {
+  color: black;
+}
+
+/*Tablet */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  .formulario {
+    background-color: paleturquoise;
+  }
+  .formulario .h2-contacto {
+    color: white;
+    /*colores*/
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+    /*listas-$font-size*/
+    margin-bottom: 10px;
+    display: flex;
+    /*flexbox*/
+  }
+  .formulario form {
+    width: 350px;
+  }
+}
+/*Mobile 360×640*/
+@media only screen and (max-width: 400px) {
+  .formulario {
+    background-color: darkkhaki;
+  }
+  .formulario .h2-contacto {
+    color: white;
+    /*colores*/
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+    /*listas-$font-size*/
+    margin-bottom: 10px;
+    display: flex;
+    /*flexbox*/
+  }
+  .formulario form {
+    width: 350px;
+  }
+}
+/*fin contactos*/
+.rehabilitacion .contenedor-rehab {
+  list-style: none;
+  display: flex;
+}
+.rehabilitacion .contenedor-rehab .card {
+  width: 100%;
+  position: relative;
+  color: sandybrown;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  list-style: none;
+  padding: 2px;
+  border-radius: 7px;
+}
+.rehabilitacion .contenedor-rehab .card:hover .card-body {
+  display: block;
+}
+.rehabilitacion .contenedor-rehab .card .card-body {
+  position: absolute;
+  display: none;
+  top: 2px;
+  left: 2px;
+  bottom: 2px;
+  right: 2px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 7px;
+}
+.rehabilitacion .contenedor-rehab .card .card-body .card-text {
+  font-family: Arial, Helvetica, sans-serif;
+  size: 20px;
+  padding: 5px;
+  text-align: center;
+  color: white;
+}
+.rehabilitacion .contenedor-rehab .card-img-top {
+  width: 100%;
+  height: 100%;
+  border-radius: 7px;
+}
+
+.nosotros .parrafo-nosotros {
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 25px;
+  color: white;
+  width: 80%;
+  margin: 0 auto;
+}
+.nosotros .prof-conten .p-lic {
+  color: gold;
+  font-size: 25px;
+  padding: 15px;
+}
+
+.tips .h3-tips {
+  width: 100%;
+}
+.tips .tips-lista .tips-items {
+  color: white;
+}
+
+.grid {
+  background-color: #0c6272;
+  color: white;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto auto auto auto;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  grid-template-areas: "header" "main" "footer";
+}
+
+.grid-disposition1 {
+  grid-area: header;
+}
+
+.grid-disposition2 {
+  grid-area: main;
+}
+
+.grid-disposition3 {
+  grid-area: footer;
+}
+
+.container-contacto, .display-1 .como-LL {
+  display: flex;
+  justify-content: center;
+}
+
+.main-header h3, .rehabilitacion .h3-rehabilitacion, .nosotros .h3-nosotros, .tips .h3-tips {
+  margin: 5px 25px;
+  color: black;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 40px;
+  letter-spacing: 2px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.body {
+  width: 100%;
+  background-color: #0c6272;
+}
+
+.segundo-nombre {
+  margin: 5px 25px;
+  font-family: #1e222c;
+  color: #1e222c;
+  font-size: 40px;
+}
+
+strong {
+  color: yellowgreen;
+}
+
+.main-header .parraf-main {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/*# sourceMappingURL=style.css.map */

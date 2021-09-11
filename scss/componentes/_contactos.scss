@@ -1,0 +1,130 @@
+/*inicio contactos*/
+.container-contacto {
+    background: $background; /*colores*/ 
+    @extend %display-flex;  /*extend*/
+    flex-direction: column;
+    font-family: monospace; 
+}
+
+.form-contenedor {
+    background-image: url(../imagenes/deportista-6.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin-bottom: 5px;
+
+
+
+    .form {
+    max-width: 450px;
+    margin: auto;
+    background: rgba (0,0,0,0.7);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;;
+    border-radius: 7px;
+        .h2-contacto {
+            color: $segundo-nombre; /*colores*/
+            text-align: center;
+            margin: 0;
+            font-size: nth($font-size, 4); /*listas-$font-size*/
+            margin-bottom: 10px;
+            display: flex;                          /*flexbox*/
+            }    
+
+
+        input, textarea {
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 7px;
+        box-sizing: border-box;
+        font-size: nth($font-size, 1);/*listas-$font-size*/
+        border: solid white;
+        border-radius: 7px;
+            &:hover{
+                cursor: pointer;
+                border: solid $seleccion;
+                transition: all .3s;
+            }
+            
+        }
+
+        textarea {
+        min-height: 100px;
+        max-height: 200px;
+        max-width: 100%;
+        border-radius: 7px;
+            &:hover{
+                cursor: pointer;
+                border: solid $seleccion;
+                transition: all .3s;
+            }
+        }
+
+        .boton {
+            border-radius: 7px;
+            &:hover{
+                cursor: pointer;
+                color: $seleccion;
+                transition: all .3s;
+            }
+            &:active{
+                cursor: pointer;
+                color: $nombre-seccion;
+                background-color: $olivos;
+            }
+        }
+    }
+}
+.display-1{
+    .como-LL{
+        @extend %display-flex;
+        align-items: center;
+        color: $titulos;
+        font-size: nth($font-size, 5);
+    }
+    .Atendemos{
+        color: $Atendemos;
+    }
+}
+
+
+    /*Tablet */
+    @media only screen and (min-width: 401px) and (max-width: 960px) {
+        .formulario {
+            background-color: paleturquoise;
+           .h2-contacto {
+                color: $nombre-seccion; /*colores*/
+                text-align: center;
+                margin: 0;
+                font-size: nth($font-size, 4); /*listas-$font-size*/
+                margin-bottom: 10px;
+                display: flex;                          /*flexbox*/
+                }
+        
+            form {
+            width: 350px;
+            }
+        }
+    }
+
+/*Mobile 360×640*/
+    @media only screen and (max-width: 400px){
+        .formulario {
+            background-color: darkkhaki;
+           .h2-contacto {
+                color: $nombre-seccion; /*colores*/
+                text-align: center;
+                margin: 0;
+                font-size: nth($font-size, 4); /*listas-$font-size*/
+                margin-bottom: 10px;
+                display: flex;                          /*flexbox*/
+                }
+        
+            form {
+            width: 350px;
+            }
+        }
+    }
+    
+/*fin contactos*/

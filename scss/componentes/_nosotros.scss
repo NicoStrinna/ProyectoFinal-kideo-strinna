@@ -1,0 +1,22 @@
+.nosotros{
+    .h3-nosotros{
+        @extend %titulos-secciones;
+    }
+    .parrafo-nosotros{
+        text-align: center;
+        font-family: $principal;
+        font-size: nth($font-size, 3 );
+        color: $parrafos;
+        width: 80%;
+        margin: 0 auto;
+        
+    }
+    .prof-conten{
+        .p-lic{
+            color: $lic;
+            font-size: nth($font-size, 3);
+            padding: 15px;
+        }
+        
+    }
+}

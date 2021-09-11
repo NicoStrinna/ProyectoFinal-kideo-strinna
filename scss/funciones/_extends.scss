@@ -1,0 +1,11 @@
+%display-flex{
+    display: flex;
+    justify-content: center;
+}
+%titulos-secciones{
+    margin: 5px 25px;
+    color: $titulos;
+    font-family: $principal;
+    font-size: nth($font-size, 5 );
+    letter-spacing: 2px;;
+}
